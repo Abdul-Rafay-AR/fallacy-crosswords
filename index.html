@@ -38,7 +38,33 @@
                 arr.sort(() => Math.random() - 0.5).slice(0, 10);
             console.log(randomTen(puzzlewords));
             crosswordPuzzle(randomTen(puzzlewords));
+            appendList(
+                relevance,
+                "Relevance fallicies (remove space when typing):"
+            );
+            appendList(
+                insufficient_evidence,
+                "Insufficient evidence fallacies (remove space when typing):"
+            );
         });
+
+        function appendList(items, headingText) {
+            const container = document.createElement("div");
+
+            const heading = document.createElement("h4");
+            heading.textContent = headingText;
+            container.appendChild(heading);
+
+            const ul = document.createElement("ul");
+            items.forEach((item) => {
+                const li = document.createElement("li");
+                li.textContent = item;
+                ul.appendChild(li);
+            });
+
+            container.appendChild(ul);
+            document.body.appendChild(container);
+        }
     </script>
 
     <body>
