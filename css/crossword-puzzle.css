@@ -29,7 +29,7 @@
 .linkable {
 	cursor:pointer;
 	color:blue;
-	text-decoration:underline;
+	/* text-decoration:underline; */
 }
 .background-text {
 	position: absolute;
