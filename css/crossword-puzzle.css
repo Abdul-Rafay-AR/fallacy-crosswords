@@ -32,13 +32,13 @@ body {
 
 .linkable {
     cursor: pointer;
-    /* color: black; */
-    color: #4a90e2;
+    color: blue;
+    /* color: #4a90e2; */
     transition: all 0.15s ease-in-out;
 }
-.linkable:hover {
-    color: #357abd;
-}
+/* .linkable:hover { */
+    /* color: #357abd; */
+/* } */
 .background-text {
     position: absolute;
     top: 0;
@@ -52,7 +52,7 @@ body {
 .strikeout {
     /* position: relative; */
     text-decoration: line-through;
-    text-decoration-color: blue;
+    text-decoration-color: black;
     text-decoration-thickness: 2px;
 }
 
